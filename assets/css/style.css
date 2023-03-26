@@ -10,6 +10,13 @@
     box-sizing: border-box;
 }
 
+body {
+    background: #0F2027;
+    background: -webkit-linear-gradient(to right, #2C5364, #203A43, #0F2027);
+    background: linear-gradient(to right, #2C5364, #203A43, #0F2027);
+
+}
+
 /* Header */
 header {
     padding: 25px 0 0 70px;
@@ -46,7 +53,12 @@ header ul li {
 .button-header:hover {
     color: #ADFF00;
     background-color: #515151;
-    transition: 0.9s;
+    transition: 0.4s;
+}
+
+.button-header:active {
+    opacity: 0.5;
+    transition: 0.2s;
 }
 
 /* Main */
@@ -73,7 +85,7 @@ main {
 h1 {
     font-weight: 900;
     font-size: 90px;
-    color: #515151;
+    color: #FFFFFF;
     margin-bottom: 20px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     animation: sombra 2s infinite;
@@ -84,17 +96,17 @@ h1 {
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
     }
     50% {
-      text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5);
+      text-shadow: 8px 6px 8px rgba(0, 0, 0, 0.5);
     }
     100% {
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      text-shadow: 4px 2px 4px rgba(0, 0, 0, 0.5);
     }
 }
 
 h2 {
     font-weight: 500;
     font-size: 70;
-    color: #515151;
+    color: #d6d6d6;
     margin-bottom: 20px;
 }
 
@@ -102,7 +114,7 @@ p {
     font-weight: 400;
     font-size: 20px;
     line-height: 29px;
-    color: #848484;
+    color: #b3b3b3;
     text-align: justify;
 }
 
@@ -127,7 +139,6 @@ p {
 .button-content:active {
     opacity: 0.3;
     transition: 0.1s;
-    border: 0.5px solid grey;
 }
 
 @media screen and (max-width: 1392px){
