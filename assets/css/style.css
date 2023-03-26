@@ -91,6 +91,10 @@ h1 {
     animation: sombra 2s infinite;
 }
 
+h1::first-letter{
+    color: #ADFF00;
+}
+
 @keyframes sombra {
     0% {
       text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
