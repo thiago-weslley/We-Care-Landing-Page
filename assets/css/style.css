@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap');
+@import "compass/css3";
+@import url(https://fonts.googleapis.com/css?family=Lato:700,900);
 
 /* Reset */
 * {
@@ -70,14 +72,28 @@ main {
 
 h1 {
     font-weight: 900;
-    font-size: 6vw;
+    font-size: 90px;
     color: #515151;
     margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: sombra 2s infinite;
+}
+
+@keyframes sombra {
+    0% {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+    50% {
+      text-shadow: 4px 6px 8px rgba(0, 0, 0, 0.5);
+    }
+    100% {
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
 }
 
 h2 {
     font-weight: 500;
-    font-size: 4vw;
+    font-size: 70;
     color: #515151;
     margin-bottom: 20px;
 }
@@ -91,7 +107,7 @@ p {
 }
 
 .button-content {
-    margin-top: 70px;
+    margin-top: 80px;
     font-size: 28px;
     padding: 15px 46px;
     font-weight: 700;
@@ -105,7 +121,13 @@ p {
 .button-content:hover {
     color: #ADFF00;
     background-color: #515151;
-    transition: 0.8s;
+    transition: 0.5s;
+}
+
+.button-content:active {
+    opacity: 0.3;
+    transition: 0.1s;
+    border: 0.5px solid grey;
 }
 
 @media screen and (max-width: 1392px){
@@ -138,36 +160,20 @@ p {
     }
 }
 
-@media screen and (max-width: 653px){
-    
-    header {
-        padding: 5px 0 0 0px;
-        margin-bottom: 50px;
-    }
+@media screen and (max-width: 800px){
 
-	header ul li {
-        display: inline;
-        margin-right: 5px;
-    }
-    
-    .link-header {
-        line-height: 40px;
-        font-size: 15px;
-    }
-    
-    .button-header {
-        font-size: 18px;
-        border: none;
-        padding: 3px 15px;
+    header {
+        display: none;
     }
 
     /* Main */
     .img-section {
-        margin: 0 0 20px 0;
+        margin-top: 30px;
+        margin-bottom: 90px;
     }
     
     .img-logo {
-        width: 260px;
+        width: 100%;
     }
     
     .content {
@@ -175,21 +181,21 @@ p {
     }
     
     h1 {
-        font-size: 10vw;
+        font-size: 12vw;
     }
     
     h2 {
-        font-size: 6vw;
+        font-size: 8vw;
     }
     
     p {
-        font-size: 12px;
+        font-size: 1em;
         line-height: 18px;
     }
     
     .button-content {
         margin: 20px 0 50px 0;
         font-size: 12px;
-        padding: 10px 30px;
+        padding: 15px 35px;
     }
 }
