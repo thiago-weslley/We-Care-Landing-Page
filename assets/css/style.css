@@ -39,6 +39,10 @@ header ul li {
     text-decoration:underline;
 }
 
+.link-header:active {
+    opacity: 0.6;
+}
+
 .button-header {
     background: #665AE1;
     color: #FFFFFF;
