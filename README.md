@@ -14,6 +14,10 @@ Landing page to train html and css concepts
 
 Este é um projeto de uma página web simulando uma landing page para uma clínica veterinária. O código HTML define a estrutura da página, enquanto o código CSS fornece estilos para os elementos da página. O objetivo do projeto é colocar em prática alguns conceitos relacionados a responsividade.
 
+<p align="center">
+<img src="./assets/images/layout.png" width="700" style="display: block; margin: 0 auto;">
+</p>
+
 ## :computer: Tecnologias
 
 - ![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) : utilizado para estruturar a página web, definindo os elementos, tags e suas respectivas funções.
